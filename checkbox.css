@@ -1,0 +1,24 @@
+.check-face {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    position: relative;
+}
+
+.check-face:after {
+    content: "";
+    width: 1em;
+    height: 1em;
+    border: 1px solid blue;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked + .check-face:after {
+    content: "\2713";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    color: blue;
+    text-align: center;
+}
