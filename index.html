@@ -3,26 +3,25 @@
 <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="drawer.css">
     <link rel="stylesheet" href="switch.css">
     <link rel="stylesheet" href="checkbox.css">
 </head>
 <body>
 
-<div class="foo">
-    <div>Check Box 1</div>
-    <div class="checkbox">
-        <input id="check1" type="checkbox" class="check" name="check" value="check1">
-        <label for="check1" class="check-face"></label>
+
+<div class="checkbox">
+    <input id="check1" type="checkbox" class="check" name="check" value="check1">
+    <label for="check1" class="foo check-face">Check Box 1</label>
+    <div class="foo drawer">
+        <div>for sooth</div>
+        <div class="switch">
+            <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+            <label for="cmn-toggle-4" class="toggle-label"></label>
+        </div>
     </div>
 </div>
 
-<div class="foo">
-    <div>for sooth</div>
-    <div class="switch">
-        <input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
-        <label for="cmn-toggle-4" class="toggle-label"></label>
-    </div>
-</div>
 
 <canvas id="myCanvas"></canvas>
 <script src="progress.js" type="text/javascript">
