@@ -1,6 +1,5 @@
 .check-face {
     display: flex;
-    justify-content: space-between;
     cursor: pointer;
     position: relative;
 }
@@ -12,11 +11,11 @@
     border: 1px solid blue;
 }
 
-input[type=checkbox] {
+.check {
     display: none;
 }
 
-input[type=checkbox]:checked + .check-face:after {
+.check:checked + .check-face:after {
     content: "\2713";
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
     color: blue;

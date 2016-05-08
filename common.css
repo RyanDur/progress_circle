@@ -1,0 +1,10 @@
+.foo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+canvas {
+    border: 1px solid black;
+    width: 15%;
+}

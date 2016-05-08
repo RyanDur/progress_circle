@@ -1,0 +1,55 @@
+.cmn-toggle {
+    display: none;
+}
+
+.cmn-toggle + .toggle-label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+
+.cmn-toggle.cmn-toggle-round-flat + .toggle-label {
+    padding: 2px;
+    width: 30px;
+    height: 15px;
+    background-color: #dddddd;
+    border-radius: 60px;
+    transition: background 0.4s;
+}
+
+.cmn-toggle.cmn-toggle-round-flat + .toggle-label:before,
+.cmn-toggle.cmn-toggle-round-flat + .toggle-label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+.cmn-toggle.cmn-toggle-round-flat + .toggle-label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #fff;
+    border-radius: 60px;
+    transition: background 0.4s;
+}
+.cmn-toggle.cmn-toggle-round-flat + .toggle-label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 10px;
+    background-color: #dddddd;
+    border-radius: 52px;
+    transition: margin 0.4s, background 0.4s;
+}
+
+
+
+.cmn-toggle.cmn-toggle-round-flat:checked + .toggle-label {
+    background-color: #8ce196;
+}
+.cmn-toggle.cmn-toggle-round-flat:checked + .toggle-label:after {
+    margin-left: 16px;
+    background-color: #8ce196;
+}
