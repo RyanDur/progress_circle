@@ -12,9 +12,9 @@
             elem.addEventListener(event, func)
         };
     };
-    var sibling = function (elem) {
-        return function (that) {
-            return that.parentElement.querySelector(elem)
+    var sibling = function (sibling) {
+        return function (elem) {
+            return elem.parentElement.querySelector(sibling)
         }
     };
 
